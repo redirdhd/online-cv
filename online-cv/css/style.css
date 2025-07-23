@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 @font-face {
   font-family: 'ArcaneNine';
   src: url('./fonts/ArcaneNine.otf') format('opentype');
@@ -15,11 +16,9 @@ body {
 h1 {
   font-family: 'ArcaneNine', serif;
   font-size: 2.5rem;
-  color: #7500a3;
+  color: #2cb67d;
   text-align: center;
   text-transform: uppercase;
-  outline-style: groove;
-  outline-color: white;
 }
 
 h2 {
@@ -86,6 +85,28 @@ footer {
 .box:hover {
   transform: scale(1.05);
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #141414;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #2cb67d;
+}
+
 
 
 
