@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: 'ArcaneNine';
-  src: url('./fonts/ArcaneNine.otf') format('opentype');
+  src: url('../fonts/ArcaneNine.otf') format('opentype');
 }
 
 h1 {
@@ -107,6 +107,16 @@ footer {
   color: #2cb67d;
 }
 
+.lathatatlan {
+  display: none;
+}
 
+#elohely{
+border-radius: 90px;
+border-style: dashed;
+size: 60px;
+}
 
-
+iframe{
+  border-radius: 180px;
+}
