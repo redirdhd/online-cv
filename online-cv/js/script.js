@@ -28,13 +28,16 @@ if (pontszam >= 90) {
     console.log("Gyakorlás szükséges")
 }
 
-function gameChange() {
-    let gameType = document.getElementById("gameType")
-gameType.textContent = "Kedvenc Játékom a Monster Hunter Franchise"
-gameType.style.color = "#2cb"
-}
+const projektDobozok = document.querySelectorAll(".projekt");
 
-function megmutat() {
-    const reszlet = document.getElementById("reszlet");
-    reszlet.classList.toggle("lathatatlan")
-}
+projektDobozok.forEach((projekt) => {
+  const gomb = projekt.querySelector(".gomb-projekt");
+  const reszlet = projekt.querySelector(".projekt-reszlet");
+
+  gomb.addEventListener("click", () => {
+    reszlet.classList.toggle("rejtett-projekt");
+  });
+});
+
+
+

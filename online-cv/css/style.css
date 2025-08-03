@@ -25,6 +25,7 @@ h2 {
   color: #2cb67d; 
 }
 
+
 section {
   margin: 40px 20px;
   padding: 20px;
@@ -120,3 +121,43 @@ size: 60px;
 iframe{
   border-radius: 180px;
 }
+.lathatatlan {
+  display: none;
+}
+
+.projekt {
+  margin-bottom: 30px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projekt h3 {
+  color: #2cb67d;
+}
+
+.bovebben {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #7f5af0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bovebben:hover {
+  background-color: #5b3dc4;
+}
+.rejtett-projekt {
+  display: none;
+}
+
+.projekt-reszlet {
+  color: #aaa;
+  font-style: italic;
+}
+
