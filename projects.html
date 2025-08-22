@@ -4,40 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-          <link rel="stylesheet" href="css/style.css" />
-</head>
+      <link rel="stylesheet" href="css/style.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></head>
 <body>
-      <nav>
-    <ul class="navbar">
-      <li><a href="index.html">Kezdőlap</a></li>
-      <li><a href="about.html">Rólam</a></li>
-      <li><a href="experience.html">Tapasztalat</a></li>
-      <li><a href="projects.html">Projektek</a></li>
-      <li><a href="contact.html">Kapcsolat</a></li>
-    </ul>
-  </nav>
-
-<div class="projekt">
-  <h3>Projekt 1</h3>
-  <p>
-    Leírás... 
-    <span class="projekt-reszlet rejtett-projekt">
-      További részlet erről a projektről...
-    </span>
-  </p>
-  <button class="gomb-projekt">Bővebben</button>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-outline-info"><i class="bi bi-house"></i><a href="index.html">Kezdőlap</a></button>
+  <button type="button" class="btn btn-outline-info"><i class="bi bi-file-earmark-person"></i><a href="about.html">Rólam</a></button>
+  <button type="button" class="btn btn-outline-info"><i class="bi bi-boxes"></i><a href="experience.html">Tapasztalatok</a></button>
+  <button type="button" class="btn btn-outline-info"><i class="bi bi-kanban"></i><a href="projects.html">Projektek</a></button>
+  <button type="button" class="btn btn-outline-info"><i class="bi bi-at"></i><a href="contact.html">Kapcsolat</a></button>
 </div>
 
+<style>
+  .rejtett-projekt { display: none; }
+</style>
+
 <div class="projekt">
-  <h3>Projekt 2</h3>
-  <p>
-    Leírás... 
-    <span class="projekt-reszlet rejtett-projekt">
-      Részlet másik projektről...
-    </span>
-  </p>
-  <button class="gomb-projekt">Bővebben</button>
+  <h3>Leírás: Ez a link tartalmazza az eddigi vizsgamunkáimat és önálló korábbi próbálkozásaimat egy csomagban.</h3>
+  <h4>Mindez egy <Q><i class="bi bi-github"></i>git</Q> linkben található</h4>
+  <button type="button" class="gomb-projekt">Mutasd a részleteket</button>
+
+  <div class="projekt-reszlet rejtett-projekt">
+    <p><a href="https://github.com/redirdhd/previous_exams_david_gergely.git">https://github.com/redirdhd/previous_exams_david_gergely.git</a></p>
+  </div>
 </div>
 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/images/45814_3345489_448136_image.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>TARTALOM</h1> 
+    <p><h5>HTML</h5></p>
+    <p><h5>Javascript</h5></p>
+    <p><h5>Angular</h5></p>
+    <p><h5>Angular-Hosting(Firebase)</h5></p>
+    <p><h5>Korai Html gyakorló</h5></p>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .rejtett-projekt { display: none; }
+</style>
+
+  <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<footer>
+
+  <button type="button" class="btn btn-outline-info" onclick="changeBg()">Háttér váltás</button>
+
+</footer>
 </body>
 </html>

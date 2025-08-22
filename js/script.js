@@ -1,31 +1,15 @@
-console.log("Helló, Gergely Dávid vagyok!");
-
-const nevem = "Gergely Dávid";
-console.log(nevem);
-
-let nev = "Gergely Dávid-Redi"
-let szakma = "Frontend Fejlesztő"
-
-console.log("Név: " + nev);
-console.log("Szakma: " +  szakma)
-
-let tapasztalat = 1; //év
-
-if (tapasztalat >= 2) {
-    console.log("Haladó szintű vagy");
-} else if (tapasztalat === 1) {
-    console.log("Már van alapod, fejélődsz!");
-} else {
-    console.log("Most kezdted hajrá");
+function changeBg() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
 
-let pontszam = 85;
-if (pontszam >= 90) {
-    console.log("Kiváló");
-} else if (pontszam >= 70) {
-    console.log("Elég jó")
-} else { 
-    console.log("Gyakorlás szükséges")
+function visibility1() {
+  var x = document.getElementById("visible1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 const projektDobozok = document.querySelectorAll(".projekt");
@@ -38,6 +22,3 @@ projektDobozok.forEach((projekt) => {
     reszlet.classList.toggle("rejtett-projekt");
   });
 });
-
-
-
