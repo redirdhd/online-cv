@@ -3,15 +3,6 @@ function changeBg() {
    element.classList.toggle("dark-mode");
 }
 
-function visibility1() {
-  var x = document.getElementById("visible1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
 const projektDobozok = document.querySelectorAll(".projekt");
 
 projektDobozok.forEach((projekt) => {
@@ -22,3 +13,4 @@ projektDobozok.forEach((projekt) => {
     reszlet.classList.toggle("rejtett-projekt");
   });
 });
+
